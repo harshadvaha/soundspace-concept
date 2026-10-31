@@ -154,17 +154,18 @@ td.hi{color:var(--accent);font-weight:600}
   .rail{display:none}
   #word{left:50%;top:34%;font-size:clamp(4rem,24vw,12rem)}
   /* phones: the product owns the top half, the copy owns the bottom half on a solid ground, nothing overlaps */
-  .panel{align-items:flex-end;padding-block:0 calc(env(safe-area-inset-bottom,0px) + 1.25rem)}
-  .panel::before{content:"";position:absolute;left:0;right:0;bottom:0;height:52%;background:linear-gradient(to top,var(--bg) 0%,var(--bg) 82%,rgba(232,235,238,0) 100%);pointer-events:none}
-  .copy{width:100%;max-width:34rem;position:relative;gap:.7rem;max-height:46svh}
-  .eyebrow{font-size:.62rem}
-  h1{font-size:clamp(2rem,9.4vw,3rem)}
-  h2{font-size:clamp(1.5rem,6.8vw,2.1rem);line-height:1.04}
-  .copy p{font-size:.9rem;line-height:1.5}
+  .panel{align-items:flex-end;padding-block:0 calc(env(safe-area-inset-bottom,0px) + 6.25rem)}
+  .panel::before{content:"";position:absolute;left:0;right:0;bottom:0;height:58%;background:linear-gradient(to top,var(--bg) 0%,var(--bg) 82%,rgba(232,235,238,0) 100%);pointer-events:none}
+  .copy{width:100%;max-width:34rem;position:relative;gap:.85rem;max-height:52svh}
+  .eyebrow{font-size:.74rem}
+  h1{font-size:clamp(2.4rem,11vw,3.4rem)}
+  h2{font-size:clamp(1.9rem,8.4vw,2.6rem);line-height:1.04}
+  .copy p{font-size:1.02rem;line-height:1.5;max-width:none}
   .actions{margin-top:.15rem}
   dl.facts{padding-top:.7rem;gap:.6rem}
-  dl.facts dd{font-size:1.02rem}
-  dl.facts dd small{font-size:.7rem}
+  dl.facts dt{font-size:.68rem}
+  dl.facts dd{font-size:1.3rem}
+  dl.facts dd small{font-size:.8rem}
   ul.parts{display:none}
   .m-only{display:block}
   #ch-2 .copy > p{display:none}
@@ -179,11 +180,20 @@ td.hi{color:var(--accent);font-weight:600}
   .outro{grid-template-columns:minmax(0,1fr)}
   #word{top:31%}
   .nav .btn.sm{display:none}
-  .dock{top:calc(env(safe-area-inset-top,0px) + 10px);bottom:auto;left:auto;right:max(16px, env(safe-area-inset-right, 0px));transform:none;padding:.3rem;gap:.3rem}
-  .dock-label{display:none}
-  .sw{width:32px;height:32px;padding:3px}
+  .brand{font-size:1.05rem}
+  .brand svg{width:30px;height:30px}
+  .btn{padding:.95rem 1.35rem;font-size:1rem;min-height:48px}
+  .card h3{font-size:1.35rem}
+  .card .kind{font-size:.7rem}
+  .price{font-size:1.2rem}
+  .dock{left:var(--gutter-l);right:var(--gutter-r);transform:none;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);justify-content:space-between;padding:.5rem .5rem .5rem 1.1rem;background:rgba(251,251,252,.94)}
+  .dock-label small{font-size:.66rem}
+  .dock-label b{font-size:1.1rem}
+  .swatches{gap:.55rem}
+  .sw{width:48px;height:48px;padding:5px}
+  .sw[aria-pressed="true"]{box-shadow:inset 0 0 0 2.5px var(--accent)}
   :root{--spot-x:50%;--spot-y:30%}
-  .toast{bottom:calc(env(safe-area-inset-bottom,0px) + 20px)}
+  .toast{bottom:calc(env(safe-area-inset-bottom,0px) + 90px)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
